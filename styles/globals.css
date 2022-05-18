@@ -36,7 +36,7 @@ width: 100%;
   font-size: 29px;
   font-weight: 600;
   margin: 60px 0px;
-  color: #f02d34;
+  color: #324d67;
 }
 .marquee {
   position: relative;
@@ -61,7 +61,7 @@ width: 100%;
 }
 
  span.text-red {
-    -webkit-text-stroke: 1px #f02d34;
+    -webkit-text-stroke: 1px #324d67;
     margin-left: 6px;
 }
 .logo{
@@ -86,7 +86,7 @@ width: 100%;
   right: -8px;
   font-size: 12px;
   color: #eee;
-  background-color: #f02d34;
+  background-color: #324d67;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -138,13 +138,18 @@ width: 100%;
   width: 100%;
 
 }
+.hero-banner-container h3{
+  font-family:cursive;
+}
 .hero-banner-container .clippers-solo{
   font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 .hero-banner-container button{
    border-radius: 15px;
   padding: 10px 16px;
-  background-color: #f02d34;
+  background-color: #324d67;
   color: white;
   border: none;
   margin-top: 40px;
@@ -166,10 +171,10 @@ width: 100%;
 }
 .hero-banner-image{
   position: absolute;
-  top: -8%;
+  top: 0;
   right:3%;
-  width: 420px;
-  height: 420px;
+  width: 400px;
+  height: 400px;
 }
 
 
@@ -193,31 +198,32 @@ text-align: end;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 16px;
-  /* color: black; */
   align-self: flex-end;
 }
 .products-heading{
   text-align: center;
   margin: 40px 0px;
  color: #324d67;
-
+ 
 }
 .products-heading h2{
+  font-family:cursive;
   font-size: 40px;
   font-weight: 800;
 }
 .products-heading p{
   font-size: 16px;
   font-weight: 200;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #e7e7e7;
   border-radius: 15px;
   position: relative;
   height: 400px;
   line-height: 1; 
-  color: white;
+  color: black;
   width: 100%;
   margin-top: 120px;
 }
@@ -229,7 +235,7 @@ text-align: end;
   border-radius: 15px;
   padding: 10px 16px;
   background-color: white;
-  color: red;
+  color: #324d67;
   border: none;
   margin-top: 40px;
   font-size: 18px;
@@ -238,28 +244,35 @@ text-align: end;
 }
 .banner-desc .left h3{
   font-weight: 900;
-  font-size: 80px;
+  font-size: 30px;
   margin-left: 25px;
+  font-family: cursive;
 }
 .banner-desc .left p{
   margin:18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .footer-banner-image{
   position: absolute;
-  /* top: -35%;
-  left: 8%; */
-  top: -25%;
-  left: 25%;
+  top: 0;
+  left: 40%;
+  height:350px;
+  width:350px;
 }
 .banner-desc .right{
   line-height: 1.4;
+  margin-top: 25px;
 }
 .banner-desc .right h3{
   font-weight: 800;
-  font-size: 60px;
+  font-size: 18px;
+  font-family: cursive;
+  margin-right: 20px;
+ 
 }
 .banner-desc .right p{
-  font-size: 18px;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .banner-desc .right .company-desc{
   font-size: 14px;
@@ -272,7 +285,6 @@ text-align: end;
   right: 0;
   top: 0;
   z-index: 100;
-  /* will-change: transform; */
   transition: all 1s ease-in-out;
 
 }
@@ -321,7 +333,7 @@ text-align: end;
 }
 .cart-num-items{
   margin-left: 10px;
-  color: #f02d34;
+  color: #324d67;
 }
 .empty-cart{
   margin:40px;
@@ -625,19 +637,17 @@ margin-top: 160px;
     flex-direction: column;
     justify-content: center;
   }
+  
   .hero-banner-image{
-    display: none;
+    width:200px;
+    height: 200px;
   }
   .footer-banner-container{
     height: 560px;
     margin-top: 80px;
   }
-  .footer-banner-image{
-    width: 77%;
-    left: 30%;
-    top: 6%;
-    height: 56%
-  }
+  
+  
   .banner-desc .left h3{
     font-weight: 900;
     font-size: 50px;
@@ -651,6 +661,9 @@ margin-top: 160px;
   }
   .banner-desc .right p{
     font-size: 18px;
+  }
+  .banner-desc .right .social{
+    display: none;
   }
   .banner-desc .right .company-desc{
     font-size: 14px;

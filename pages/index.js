@@ -13,10 +13,10 @@ const index = ({products, bannerData}) => {
       <h2>Best Selling Products</h2>
       <p>One stop shop to find all your hair styling neeeds!</p>
       <div className='products-container'>
-        {products?.map((product)=> product.name)}
+        {products?.map((product)=> <Product key={product._id} product={product} />)}
       </div>
     </div>
-    <FooterBanner />
+    <FooterBanner footerBanner={bannerData && bannerData[0]}  />
     </div>
   )
 }
